@@ -27,10 +27,10 @@
                     </div>
                     <div class=" header-title col-8 col-sm-9 col-md-6 text-capitalize text-center text-white font-weight-bold">dr goyal's dental clinic and implant centre</div>
                     <div class=" contact-section col-12 col-md-4 d-flex flex-md-column justify-content-center align-items-center">
-                        <ul class="list-unstyled header-contact py-2 my-3">
-                            <li class="py-1"> <i class="fa fa-phone text-white"></i> <a href="tel:">: +234-812-472-1640 </a></li>
-                            <li class="py-1"> <i class="fa fa-envelope text-white"></i> <a href="mailto:contact@drgoyal'sdentalclinic.org">: contact@drgoyal'sdentalclinic.org</a> </li>
-                            <li class="py-1"> <i class="fa fa-address-book text-white"></i> <a href="address" class="d-xs-none text-center">: 14 Kolapo Ishola street, Ikeja, Lagos State </a> </li>
+                        <ul class="list-unstyled header-contact py-2 py-md-1 my-3">
+                            <li class="py-1 pl-1"> <i class="fa fa-phone text-white"></i> <a href="tel:">: +234-812-472-1640 </a></li>
+                            <li class="py-1 pl-1"> <i class="fa fa-envelope text-white"></i> <a href="mailto:contact@drgoyal'sdentalclinic.org">: contact@drgoyal'sdentalclinic.org</a> </li>
+                            <li class="py-1 pl-1"> <i class="fa fa-address-book text-white"></i> <a href="address" class="d-xs-none text-center">: 14 Kolapo Ishola street, Ikeja, Lagos State </a> </li>
 
                         </ul>
                     </div>
@@ -50,7 +50,7 @@
                 </div>
 
                 <div id="navbar" class="navbar-collapse collapse">
-                    <div class="navbar-nav w-100 font-weight-bold text-uppercase d-flex align-items-end justify-content-between">
+                    <div class="navbar-nav w-100 font-weight-bold text-uppercase d-flex align-items-center justify-content-center align-items-md-end justify-content-md-between ">
                         <a class="nav-link active " href="#home">Home <span class="sr-only">(current)</span></a>
                         <a class="nav-link" href="#aboutus">about us</a>
                         <a class="nav-link" href="#services">services</a>
@@ -68,7 +68,7 @@
     <div class="container-fluid">
         <div class="row">
             <!--carousel section-->
-            <div class="col-12 col-md-8 img-fluid px-0">
+            <div class="col-12 col-lg-8 img-fluid px-0">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -118,32 +118,228 @@
                 </div>
             </div>
             <!--Contact Section-->
-            <div class="col-12 col-md-4 contact">
+            <div class="col-12 col-lg-4 contact">
                 <div class="container-fluid">
-                    <form id=form>
+                    <form id=form action="#" onsubmit="return validate()">
+                        <h3 class="text-left text-capitalize font-weight-bold pb-3 title text-dark">Contact us</h3>
                         <div class="form-group">
-                            <input type="text" class="form-control text-capitalize" id="" placeholder="full name" required>
-                            <div class="text-msg text-capitalize">Surname first</div>
+                            <input type="text" class="form-control text-capitalize font-weight-bold" id="name" placeholder="full name" size="30" required>
 
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control text-capitalize" id="" placeholder="email" required>
-                            <div class="text"></div>
+                        <div class="form-group email-input mt-4">
+                            <input type="email" class="form-control text-capitalize font-weight-bold" id="email" placeholder="email" onkeydown="validate()" required>
+                            <div id="text" class="pt-2"></div>
                         </div>
 
-                        <div class="form-group">
-                            <textarea class="form-control text-capitalize" id="" placeholder="message" required></textarea>
+                        <div class="form-group mt-4">
+                            <textarea class="form-control text-capitalize font-weight-bold" id="message" placeholder="message" size="250" required></textarea>
                         </div>
-                        <div class="footer-note">You can call our 24/7 call centre +234-816-927-1157</div>
+                        <div class="submit-btn d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-lg mb-2 submit font-weight-bold text-center">Submit</button>
+                        </div>
+                        <div class="contact-footer text-center d-flex align-items-end"><small>Further enquiries? Call our 24/7 call centre
+                                <a href="tel: ">+234-816-927-1157</a></small></div>
                     </form>
 
                 </div>
             </div>
         </div>
     </div>
+    <!--Testimonial Section-->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="text-uppercase text-dark pt-5">
+                    <strong>testimonials</strong>
+                </h1>
+                <div class="title-underline mb-4"></div>
+            </div>
 
+            <div class="col-md-12">
+                <div id="testimonial" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators testimonial-indicators">
+                        <li data-target="#testimonial" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonial" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner testimonial-inner">
+                        <div class="carousel-item active testimonial-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="w-100 d-flex align-items-center justify-content-center">
+                                            <div class="img-box"><img src="./img/testimonial1.jpg" alt=""></div>
+
+                                        </div>
+
+                                        <div class="img-text">
+                                            <p>Their quick response to bookings is very commendable. Treatment is swift and painless.Come for Check up! </p>
+                                            <h4 class="text-capitalize text-right">-Chatta Wale</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="w-100 d-flex align-items-center justify-content-center">
+                                            <div class="img-box"><img src="./img/testimonial2.jpg" alt=""></div>
+
+                                        </div>
+
+                                        <div class="img-text">
+                                            <p>The dental health class is highly educative with a twist of entertainment. I didn't know there is so much to learn about dentals.</p>
+                                            <h4 class="text-capitalize text-right">-Rhoda kins</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="w-100 d-flex align-items-center justify-content-center">
+                                            <div class="img-box"><img src="./img/testimonial3.jpg" alt=""></div>
+
+                                        </div>
+
+                                        <div class="img-text">
+                                            <p>Their state of the art equipments are very efficient. You get test results in minutes. How Awesome! ipsum dolor sit amet.</p>
+                                            <h4 class="text-capitalize text-right">-Irene seath</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="w-100 d-flex align-items-center justify-content-center">
+                                            <div class="img-box"><img src="./img/testimonial4.jpg" alt=""></div>
+
+                                        </div>
+
+                                        <div class="img-text">
+                                            <p>The team is highly responsive and amiable. Surgeries don't take long before they are done. I feel so much better.</p>
+                                            <h4 class="text-capitalize text-right">-Pratek kobo</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item testimonial-item ">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="w-100 d-flex align-items-center justify-content-center">
+                                            <div class="img-box"><img src="./img/testimonial5.jpg" alt=""></div>
+
+                                        </div>
+
+                                        <div class="img-text">
+
+                                            <p>Their quick response to bookings is very commendable. Treatment is swift and painless.Come for Check up! </p>
+                                            <h4 class="text-capitalize text-right">-Kola Souls</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="w-100 d-flex align-items-center justify-content-center">
+                                            <div class="img-box"><img src="./img/testimonial6.jpg" alt=""></div>
+
+                                        </div>
+
+                                        <div class="img-text">
+                                            <p>The dental health class is highly educative with a twist of entertainment. I didn't know there is so much to learn about dentals.</p>
+                                            <h4 class="text-capitalize text-right">-Jason Derulo</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="w-100 d-flex align-items-center justify-content-center">
+                                            <div class="img-box"><img src="./img/testimonial7.jpg" alt=""></div>
+
+                                        </div>
+
+                                        <div class="img-text">
+                                            <p>Their state of the art equipments are very efficient. You get test results in minutes. How Awesome! ipsum dolor sit amet.</p>
+                                            <h4 class="text-capitalize text-right">-Wade Thomas</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="w-100 d-flex align-items-center justify-content-center">
+                                            <div class="img-box"><img src="./img/testimonial8.jpg" alt=""></div>
+
+                                        </div>
+
+                                        <div class="img-text">
+                                            <p>The team is highly responsive and amiable. Surgeries don't take long before they are done. I feel so much better.</p>
+                                            <h4 class="text-capitalize text-right">-Farez William</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
+    <!--Footer Section-->
+    <footer id="footer" class="py-5 container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-box text-center">
+                        <h3 class="text-capitalize font-weight-bold">about us</h3>
+                        <p class="text-center">The clinic was established 4yrs ago with the sole purpose of catering to people's dental health. We have a team that is dedicated to serving you.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-box text-center">
+                        <h3 class="footer-title  font-weight-bold text-capitalize">quick links</h3>
+                        <ul class="footer-links list-unstyled ">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Book an Appointment</a></li>
+                            <li><a href="#">Register for Classes</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-box text-center">
+                        <h3 class="footer-title text-capitalize font-weight-bold">Contact us</h3>
+                        <ul class="footer-links list-unstyled text-left">
+                            <li> <i class="fa fa-phone text-white"></i> <a href="tel:">: +234-812-472-1640 </a></li>
+                            <li> <i class="fa fa-envelope text-white"></i> <a href="mailto:contact@drgoyal'sdentalclinic.org">: contact@drgoyal'sdentalclinic.org</a> </li>
+                            <li> <i class="fa fa-address-book text-white"></i> <a href="address" class="d-xs-none text-center">: 14 Kolapo Ishola street, Ikeja, Lagos State </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="footer-title footer-icon-title text-capitalize text-center font-weight-bold">Connect with us:
 
+                        <span class="text-center footer-icon d-block d-md-inline mt-2 mt-md-0">
+                            <a href="#" class="btn btn-md btn-icon pt-2">
+                                <i class="fab fa-facebook-f text-center text-white fa-1x"></i>
+                            </a>
+                            <a href="#" class="btn btn-md btn-icon pt-2">
+                                <i class="fab fa-twitter text-center text-white fa-1x"></i>
+                            </a>
+                            <a href="#" class="btn btn-md btn-icon pt-2">
+                                <i class="fab fa-instagram text-center text-white fa-1x"></i>
+                            </a>
+                            <a href="#" class="btn btn-md btn-icon pt-2">
+                                <i class="fab fa-linkedin-in text-center text-white fa-1x"></i>
+                            </a>
+                            
+                        </span></h3>
+                </div>
+            </div>
+        </div>
+        <hr class="socket">
+        <p class=" footer-note text-center m-0 d-flex align-items-center justify-content-center">&copy; Dr Goyal's Dental Clinic and Implant Center. 2020</p>
+    </footer>
 
 
 
@@ -153,6 +349,8 @@
     <script src="./js/popper.min.js"></script>
     <!-- bootstrap js-->
     <script src="./js/bootstrap.min.js "></script>
+    <!--main js-->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
